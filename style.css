@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    
+}
+button {
+    font-family: inherit;
+    border: none;
+    background-color: inherit;
+    transition: 2ms;
+}
+h1 {
+    color: hsl(223, 47%, 23%);
+    font-size: 1.5em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    padding: 5px 25px;
+}
+
+.bg_image{
+    background: url("images/pattern-background-mobile.svg");
+    width: 100vw;
+    height: 150px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+
+.container {
+    background-color: white;
+    margin: 50px 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 15px 20px hsl(225, 73%, 88%);
+}
+
+.plan_container {
+    margin: 20px;
+    background-color: hsl(225, 100%, 98%) ;
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.plan_container_left {
+    display: flex;
+}
+
+h2 {
+    
+    font-size: 1em;
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);;
+}
+
+.chg_btn {
+    
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.chg_btn:hover{
+    cursor: pointer;
+    color: hsl(244,82%,68%);
+    text-decoration: none;
+}
+
+.pay_btn {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    padding: 12px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 15px hsl(226, 81%, 90%);
+}
+.pay_btn:hover {
+    cursor: pointer;
+    background-color: hsl(244,82%,68%);
+}
+
+.cxl_btn {
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    padding: 20px 50px;
+    
+}
+
+.cxl_btn:hover{
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
+
+@media (min-width: 450px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .bg_image{
+        background: url("images/pattern-background-desktop.svg") no-repeat center/cover;
+        height: 70vh;
+    }
+    .container{
+        max-width: 400px;
+        
+    }
+    .pay_btn {
+        padding: 12px 80px;
+    }
+    
+}
+
